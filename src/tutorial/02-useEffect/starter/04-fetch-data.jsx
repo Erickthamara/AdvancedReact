@@ -16,7 +16,6 @@ const FetchData = () => {
     };
     peopleData();
   }, []);
-  //console.log(`This is the data ${users}`);
 
   return (
     <div>
