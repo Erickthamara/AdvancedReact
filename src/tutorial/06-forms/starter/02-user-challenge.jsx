@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { data } from "../../../data";
-import { useEffect } from "react";
 
 const UserChallenge = () => {
   const [newname, setNewName] = useState("");
@@ -21,7 +20,9 @@ const UserChallenge = () => {
     setNewName("");
   };
   const deleteName = (id) => {
-    const deletedList = people.filter((person) => person.id !== id);
+    const deletedList = people.filter((person) => {
+      return person.id !== id;
+    });
     setPeople(deletedList);
   };
 
@@ -50,7 +51,7 @@ const UserChallenge = () => {
 
       {people.map((person) => {
         const personName = person.name;
-        console.log("I work");
+        //console.log("I work");
         return (
           <div key={person.id}>
             <h4>{personName}</h4>

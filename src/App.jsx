@@ -1,4 +1,4 @@
-import UserChallenge from "./tutorial/06-forms/starter/02-user-challenge";
+import UserChallenge from "./tutorial/08-custom-hooks/starter/02-fetch-data";
 
 function App() {
   return (
