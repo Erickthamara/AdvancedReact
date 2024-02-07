@@ -31,7 +31,7 @@ const MultipleReturnsFetchData = () => {
     return <h2>Loading...</h2>;
   }
   if (isError) {
-    return <h2>There was an erorr...</h2>;
+    return <h2>There was an err...</h2>;
   }
   const { name, avatar_url, bio } = user;
   return (
